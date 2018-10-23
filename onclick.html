@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>		 
+<style>
+.bed-details p:hover, .popup-form-btn:hover {
+    background: #fa056b;
+    color: #fff;
+    cursor: pointer;
+}	
+
+.solo-bed{
+
+    BACKGROUND: #12bb76;
+    TEXT-ALIGN: CENTER;
+    COLOR: #FFF;
+    PADDING: 10PX;
+}
+
+.double-bed{
+    BACKGROUND: #12bb76;
+    TEXT-ALIGN: CENTER;
+    COLOR: #FFF;
+    PADDING: 10PX;
+}
+
+.trio-bed{
+    BACKGROUND: #12bb76;
+    TEXT-ALIGN: CENTER;
+    COLOR: #FFF;
+	PADDING: 10PX;
+    
+}
+</style>
+</head>
+<body>
+<div class="container">
+						  <div class='col-md-12 room-section mt-5'>
+                            <h6  class='listing-detail-heading pb-2 text-center'> ON CLICK PRICE  </h6>
+                            <div class='row'>
+
+                                <div  class='col-md-4 bed-details'>
+                                    <img src="images/inner-page-images/singlebed.png" alt="">
+                                    <br>
+                                    <p class='pt-2 mt-2 solo-bed'> Solo Bed  </p>
+                                </div>
+                                <div class='col-md-4 twin-bed bed-details'>
+                                    <img src="images/inner-page-images/doublebed.png" alt=""><br>
+                                    <p class='pt-2 mt-2 double-bed'> Twin Bed </p>
+                                </div>
+                                <div class='col-md-4 trip-bed bed-details'>
+                                    <img src="images/inner-page-images/triobed.png" alt=""><br>
+                                    <p class='pt-2 mt-2 trio-bed'> Tripe Bed </p>
+                                </div>
+                            </div>
+                            
+                            <h6 class=' pb-2 text-center'> Pricing - Starts from <b class='text-black'><i class="fa fa-inr"
+                                        aria-hidden="true"></i>
+                                   <span class='bed-amount'> 9500 </span>
+                                </b> </h6>         
+         </div>
+</div>
+						  
+ <script>
+var bedAmount = document.querySelector('.bed-amount');
+
+document.querySelector('.solo-bed').onclick = function(){
+  bedAmount.innerText = '9500'
+};
+
+document.querySelector('.double-bed').onclick =  function(){
+  bedAmount.innerText = '8000'
+}
+
+document.querySelector('.trio-bed').onclick =  function(){
+  bedAmount.innerText = '7000'
+}
+</script>
+</body>	
+</html>
